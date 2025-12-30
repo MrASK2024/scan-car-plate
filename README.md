@@ -133,8 +133,7 @@ pip uninstall torch==2.9.1 torchvision==0.24.1
 pip install torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorch.org/whl/cu126
 ```
 
-Если нет CUDA — используйте CPU версию, которая уже поставлена с помощью
-менеджера пакетов poetry
+**CPU версия уже установлена poetry** — используйте как есть, если нет GPU.
 
 #### 1.3. Настройка DVC (S3 доступ)
 
