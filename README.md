@@ -124,8 +124,24 @@ conda activate scan-car-plate
 poetry install --with dev
 ```
 
-Установите PyTorch по ссылке в зависимости от вашей CUDA/ОС:  
-[https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
+Выполни установку PyTorch:
+
+PyTorch (CUDA 12.6):
+
+```bash
+pip install torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorch.org/whl/cu126
+```
+
+Если нет CUDA — используйте CPU версию:
+
+```bash
+pip install torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorch.org/whl/cpu
+```
+
+#### 1.3. Настройка DVC (S3 доступ)
+
+Для скачивания датасета скопируйте представленный мной файл в
+`.dvc/config.local`
 
 ### 2. MLflow сервер (для трекинга)
 
