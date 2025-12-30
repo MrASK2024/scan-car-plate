@@ -137,6 +137,9 @@ pip install torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorc
 
 #### 1.3. Настройка DVC (S3 доступ)
 
+**Получите .dvc/config.local от автора проекта
+[https://t.me/kas_dev](https://t.me/kas_dev)**
+
 Для скачивания датасета скопируйте представленный мной файл в
 `.dvc/config.local`
 
