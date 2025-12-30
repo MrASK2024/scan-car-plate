@@ -129,14 +129,12 @@ poetry install --with dev
 PyTorch (CUDA 12.6):
 
 ```bash
+pip uninstall torch==2.9.1 torchvision==0.24.1
 pip install torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorch.org/whl/cu126
 ```
 
-Если нет CUDA — используйте CPU версию:
-
-```bash
-pip install torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorch.org/whl/cpu
-```
+Если нет CUDA — используйте CPU версию, которая уже поставлена с помощью
+менеджера пакетов poetry
 
 #### 1.3. Настройка DVC (S3 доступ)
 

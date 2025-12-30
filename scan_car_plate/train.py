@@ -58,8 +58,6 @@ def train(cfg: DictConfig):
         iou_thresholds=list(cfg.model.metrics.iou_thresholds),
     )
 
-    # logger = TensorBoardLogger("tb_logs", name=cfg.logging.model_name)
-
     mlflow_cfg = cfg.logging.mlflow
     mlflow.set_tracking_uri(mlflow_cfg.tracking_uri)
     mlflow_logger = MLFlowLogger(
