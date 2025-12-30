@@ -106,31 +106,49 @@ IoU=0.5).
 
 ### 1. Клонирование и зависимости
 
-> git clone git@github.com:MrASK2024/scan-car-plate.git cd scan-car-plate
+```bash
+git clone git@github.com:MrASK2024/scan-car-plate.git
+cd scan-car-plate
+```
 
 #### 1.1. Создание окружения Miniconda
 
-> conda create -n scan-car-plate python=3.12 conda activate scan-car-plate
+```bash
+conda create -n scan-car-plate python=3.12
+conda activate scan-car-plate
+```
 
 #### 1.2. Установка зависимостей
 
-> poetry install --with dev Установите PyTorch по ссылке в зависимости от вашей
-> CUDA/ОС: https://pytorch.org/get-started/locally/
+```bash
+poetry install --with dev
+```
+
+Установите PyTorch по ссылке в зависимости от вашей CUDA/ОС:  
+[https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
 
 ### 2. MLflow сервер (для трекинга)
 
-> mlflow server --host 127.0.0.1 --port 8080 интерфейс будет доступен по адресу:
-> http://127.0.0.1:8080
+```bash
+mlflow server --host 127.0.0.1 --port 8080
+```
+
+Интерфейс будет доступен по адресу: http://127.0.0.1:8080
 
 ### 3. Проверка Code Quality
 
-> pre-commit install pre-commit run -a
+```bash
+pre-commit install
+pre-commit run -a
+```
 
 ## Train
 
 ### 1. Запуск обучения
 
-> python scan_car_plate/train.py
+```bash
+python scan_car_plate/train.py
+```
 
 При запуске скрипта выполняются:
 
@@ -144,11 +162,11 @@ IoU=0.5).
 
 Примеры CLI-оверрайдов:
 
-> python scan_car_plate/train.py model.optimizer.lr=3e-4
-
-> python scan_car_plate/train.py data.train_batch_size=8
-
-> python scan_car_plate/train.py num_epochs=50
+```bash
+python scan_car_plate/train.py model.optimizer.lr=3e-4
+python scan_car_plate/train.py data.train_batch_size=8
+python scan_car_plate/train.py num_epochs=50
+```
 
 Альтернативно — редактируйте `conf/config.yaml` и перезапускайте обучение.  
 Полный список параметров находится в `conf/config.yaml` и подпапках конфигов
