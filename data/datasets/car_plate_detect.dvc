@@ -1,0 +1,6 @@
+outs:
+- md5: 5fc0e6401ab44d1630deec45464ffe12.dir
+  size: 435374625
+  nfiles: 17649
+  hash: md5
+  path: car_plate_detect

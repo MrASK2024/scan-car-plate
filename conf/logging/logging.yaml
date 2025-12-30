@@ -1,0 +1,6 @@
+model_name: fastrcnn_mobilenet
+
+mlflow:
+  tracking_uri: "http://127.0.0.1:8080"
+  experiment_name: "car_plate_detection"
+  run_name: "fastrcnn_mobilenet"

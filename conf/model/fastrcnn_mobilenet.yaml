@@ -1,0 +1,7 @@
+defaults:
+  - optimizer: adamw
+  - metrics: map
+
+type: fastrcnn_mobilenet
+num_classes: 2
+max_detections_per_image: 100

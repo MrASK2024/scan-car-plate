@@ -1,0 +1,22 @@
+defaults:
+  - transforms: resize_norm
+
+repo_root: ${hydra:runtime.cwd}
+
+dvc_dataset_dir: data/datasets/car_plate_detect.dvc
+data_dir: data/datasets/car_plate_detect
+
+train:
+  images_dir: ${data.data_dir}/images/train
+  labels_dir: ${data.data_dir}/labels/train
+
+val:
+  images_dir: ${data.data_dir}/images/val
+  labels_dir: ${data.data_dir}/labels/val
+
+test:
+  images_dir: ${data.data_dir}/images/test
+  labels_dir: ${data.data_dir}/labels/test
+
+train_batch_size: 16
+predict_batch_size: 32

@@ -1,0 +1,6 @@
+[core]
+    remote = yds
+['remote "yds"']
+    url = s3://vkr-ai-cv-2025
+    endpointurl = https://storage.yandexcloud.net
+    region = ru-central1
