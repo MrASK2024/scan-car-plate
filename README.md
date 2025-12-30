@@ -162,4 +162,4 @@ Hydra.
 
 - Metrics: train_loss_epoch, val_map_50, val_mar_100
 - Hyperparams: lr, weight_decay, iou_thresholds, train_batch_size,
-  predict_batch_size, num_classes,
+  predict_batch_size, num_classes

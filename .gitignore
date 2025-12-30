@@ -219,5 +219,6 @@ tests/
 scan_car_plate/lightning_logs
 *.pth
 mlflow.db
+data\datasets\car_plate_ocr.dvc
 
 
